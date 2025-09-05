@@ -9,7 +9,7 @@ class RedisLogHandler extends AbstractProcessingHandler
     protected function write(array $record): void
     {
         $project = config('app.name', env('APP_NAME', 'default_project'));
-        $key = config('redis-logger.key_prefix', 'laravel:logs') . ':' . $project;
+        $key = config('redis-logger.key_prefix', 'laravel:logs');
 
         $config = config('redis-logger');
 
