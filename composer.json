@@ -1,0 +1,23 @@
+{
+  "name": "ccily2701/laravel-redis-logger",
+  "description": "Laravel 6 log channel that pushes logs into Redis for Logstash/ES, multi-project support",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Ccily2701\\LaravelRedisLogger\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "illuminate/support": "^6.0",
+    "monolog/monolog": "^2.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ccily2701\\LaravelRedisLogger\\RedisLoggerServiceProvider"
+      ]
+    }
+  }
+}
